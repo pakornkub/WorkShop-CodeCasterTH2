@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
-function App() {
+import ListItem from './components/ListItem'
+import ListItem2 from './components/ListItem2'
+import BookItem from './components/BookItem'
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <ListItem title="Test" body="Hello World"/>
+      <ListItem2 title="Test2" body="Hello World2"/>
+      <BookItem book={{name: 'Harry Pot', author: 'JK'}}/>
+    </div> 
   );
-}
+};
 
 export default App;
