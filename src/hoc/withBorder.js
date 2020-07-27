@@ -5,10 +5,10 @@ const Border = styled.div`
   border: 2px solid red;
 `;
 
-const withBorder = (WrappedCompenent) => (props) => {
+const withBorder = (WrappedComponent) => (props) => {
   return (
     <Border>
-      <WrappedCompenent {...props} />
+      <WrappedComponent {...props} />
     </Border>
   );
 };
