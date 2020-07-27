@@ -1,6 +1,6 @@
 import React from "react";
 import withBorder from '../hoc/withBorder';
-import whithAlert from '../hoc/whithAlert';
+import withAlert from '../hoc/withAlert';
 import {compose} from 'recompose'
 
 const ListItem = (props) => {
@@ -16,7 +16,7 @@ const ListItem = (props) => {
 };
 
 const enhance = compose(
-  whithAlert,
+  withAlert,
   withBorder
 )
 

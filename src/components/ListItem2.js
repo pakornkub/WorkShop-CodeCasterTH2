@@ -1,6 +1,6 @@
 import React from "react";
 import withBorder from '../hoc/withBorder';
-import whithAlert from '../hoc/whithAlert';
+import withAlert from '../hoc/withAlert';
 
 const ListItem = (props) => {
   let { title, body, alert } = props;
@@ -13,4 +13,4 @@ const ListItem = (props) => {
   );
 };
 
-export default whithAlert(withBorder(ListItem));
+export default withAlert(withBorder(ListItem));
